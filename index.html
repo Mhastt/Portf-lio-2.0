@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu portfólio</title>
+</head>
+
+<body>
+    <header class="container text-center">
+        <img src="img/imagem_270x270_cinza.png" alt="avatar do Matheus" class="rounded-circle" width="150" height="150"
+            srcset="">
+        <p class="lead">Eu sou o Matheus</p>
+        <h1>Eu estou aprendendo Programação</h1>
+        <p>Sou estudante do Terceiro ano do ensino medio.
+            Estou aprendendo computação no alura, utilizando HTML, CSS e JavaScript. 
+            Veja os projetos que ja desenvolvi</p>
+        <p>Minhas habilidades</p>
+        <div>
+            <p class="badge bg-secondary">HTML</p>
+            <p class="badge bg-secondary">CSS</p>
+            <p class="badge bg-secondary">JavaScript</p>
+            <p class="badge bg-secondary">Scratch</p>
+        </div>
+    </header>
+    <main class="container mt-5">
+        <h2>Meus projetos</h2>
+        <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/Screenshot 2025-06-23 08.17.11.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Monalisa</h5>
+                        <p class="card-text">O código desenha um rosto estilizado no centro da tela usando formas básicas. O fundo é azul, e o rosto é um círculo grande cinza-azulado. Existem dois olhos vermelhos, um menor à esquerda e outro maior à direita. Dentro dos olhos, as pupilas pretas se movem seguindo o movimento do mouse, dando a impressão de que o rosto está olhando para onde o cursor vai. A boca é uma linha reta na parte inferior do rosto, o nariz é um triângulo vermelho no centro, e duas sobrancelhas são desenhadas acima dos olhos. Quando o mouse é pressionado, o código mostra no console a posição atual do cursor. Assim, o desenho combina formas simples com uma interação que faz os olhos seguirem o movimento do mouse.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/Screenshot 2025-06-23 08.29.12.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Quente frio</h5>
+                        <p class="card-text">O código cria um jogo onde o jogador deve encontrar um ponto escondido que se move aleatoriamente pela tela. No início, esse ponto recebe uma posição aleatória. A cada quadro, ele se move de forma aleatória dentro dos limites da tela. O jogador usa o mouse para procurar o ponto, e um círculo aparece no ponteiro, cujo tamanho indica a distância até o alvo — quanto mais perto, menor o círculo. Quando o mouse chega muito próximo do ponto, a mensagem “Encontrei!” aparece na tela e o jogo para, indicando que o jogador encontrou o alvo.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/Screenshot 2025-06-23 08.33.44.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual">
+                    <div class="card-body">
+                        <h5 class="card-title">Corrida
+                        </h5>
+                        <p class="card-text">O código cria um jogo de corrida com quatro emojis, cada um posicionado em uma linha diferente. Os jogadores controlam os emojis usando as teclas “a”, “s”, “d” e “w”. Cada vez que uma dessas teclas é solta, o respectivo emoji avança uma distância aleatória. A corrida começa do lado esquerdo da tela e termina na linha de chegada do lado direito, marcada por uma faixa quadriculada. O fundo da tela fica marrom quando o jogo está ativo e cinza quando está fora de foco. O jogo verifica continuamente se algum emoji ultrapassou a linha de chegada. Quando isso acontece, exibe na tela qual emoji venceu e o jogo é encerrado.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>O código cria um desenho de um rosto com interação, utilizando a biblioteca p5.js. A função setup() é executada uma única vez no início e define o tamanho da tela como 400x400 pixels com o comando createCanvas(400, 400).
+
+Dentro da função draw(), que é executada continuamente, o fundo da tela é preenchido com a cor azul (background("#03A9F4")), garantindo que os elementos sejam redesenhados a cada quadro.</p>
+                    <p>Em seguida, o rosto é desenhado como um círculo grande na cor cinza-azulada (circle(200, 200, 300)), centralizado no meio da tela.
+
+Os olhos são formados por dois círculos vermelhos: um no lado esquerdo (circle(150, 150, 50)) e outro no lado direito (circle(250, 150, 70)), sendo o direito um pouco maior.</p>
+                    <p>As sobrancelhas são linhas posicionadas acima dos olhos. A sobrancelha esquerda é desenhada com uma linha entre os pontos (123, 115) e (178, 115), enquanto a direita vai de (225, 116) até (279, 104). Elas ajudam a dar expressão ao rosto.
+
+O nariz é um triângulo vermelho desenhado com os vértices nos pontos (200, 100), (180, 220) e (220, 220), bem no centro do rosto.
+
+A boca é uma linha reta horizontal, representando uma expressão neutra ou séria, indo do ponto (150, 260) até (245, 260).</p>
+                    <p>A parte interativa do código está nas pupilas. Elas se movem seguindo o cursor do mouse. Isso é feito com as funções map(mouseX, 0, 400, 130, 170) e map(mouseY, 0, 400, 130, 170), que transformam as coordenadas do mouse nos limites do espaço dos olhos, impedindo que as pupilas saiam das bordas. A pupila do olho esquerdo é desenhada em (olhoX, olhoY) e a do olho direito em (olhoX + 100, olhoY), ambas como pequenos círculos pretos (circle(..., 10)).
+
+Por fim, existe um comando if (mouseIsPressed) { console.log(mouseX, mouseY); } que, quando o mouse é pressionado, imprime no console as coordenadas do ponteiro, funcionando como uma ferramenta de depuração para saber onde está o mouse na tela.</p>
+                    <img src="img/Screenshot 2025-06-23 08.17.11.png" alt="Imagem representativa do projeto da monalisa">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://editor.p5js.org/_Mhast/full/bmnCRK9Oi">Ver projeto ao vivo</a>
+                    <a href="https://editor.p5js.org/_Mhast/sketches/bmnCRK9Oi">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <a href="https://github.com/femascheti">GitHub</a>
+        </div>
+        <p class="my-5 text-center">© Copyright 2024. Produzido por Matheus Caperucci</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
